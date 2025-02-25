@@ -97,7 +97,7 @@ body {
     }
 
     .nav-links-center {
-        gap: 10px; /* Reduce gap to fit links */
+        gap: 8px; /* Reduce gap to fit links */
         flex-grow: 1;
         display: flex;
         justify-content: center;
@@ -115,7 +115,7 @@ body {
     }
 
     .mode-toggle {
-        font-size: 12px; /* Smaller toggle */
+        font-size: 10px; /* Smaller toggle */
         padding: 5px 8px;
         position: absolute;
         right: 10px; /* Ensures it stays visible */
