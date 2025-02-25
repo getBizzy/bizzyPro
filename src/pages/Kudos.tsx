@@ -40,22 +40,24 @@ const Kudos = () => {
         <div className="kudos-container">
             <h1 className="text-4xl font-bold mb-6">Kudos & Recommendations</h1>
 
-            {/* Show message when no kudos exist */}
-            {kudosList.length === 0 ? (
-                <p className="text-gray-500 mb-6">No kudos yet. Be the first to add one!</p>
-            ) : (
-                <div className="kudos-list">
-                    {kudosList.map((kudos) => (
-                        <div key={kudos.id} className="kudos-item">
-                            <p>"{kudos.text}"</p>
-                            <span> - {kudos.author}</span>
-                        </div>
-                    ))}
-                </div>
-            )}
+            {/* Scrollable Kudos List */}
+            <div className="kudos-scroll-container">
+                {kudosList.length === 0 ? (
+                    <p className="text-gray-500 mb-6">No kudos yet. Be the first to add one!</p>
+                ) : (
+                    <div className="kudos-list">
+                        {kudosList.map((kudos) => (
+                            <div key={kudos.id} className="kudos-item">
+                                <p>"{kudos.text}"</p>
+                                <span> - {kudos.author}</span>
+                            </div>
+                        ))}
+                    </div>
+                )}
+            </div>
 
             {/* Kudos Input Form */}
-            <div className="bg-white p-4 rounded-lg shadow-md w-full max-w-md">
+            <div className="kudos-form">
                 <h2 className="text-xl font-semibold mb-4">Add a Kudos</h2>
                 <input
                     type="text"
