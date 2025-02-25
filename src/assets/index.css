@@ -71,7 +71,7 @@ body {
 
 .nav-links-center {
     display: flex;
-    gap: 40px;
+    gap: 25px;
     flex-grow: 1;
     justify-content: center;
 }
@@ -91,21 +91,25 @@ body {
     justify-content: space-between;
 }
 
-/* Mobile-friendly navigation */
+/* Adjust for mobile screens */
 @media (max-width: 768px) {
-    .nav-bar {
-        flex-direction: column;
-        padding: 10px;
-    }
-
     .nav-links-center {
-        flex-direction: column;
-        gap: 10px;
+        gap: 10px; /* Reduce spacing for mobile */
     }
 
     .nav-link {
+        font-size: 14px; /* Slightly smaller text */
         padding: 5px 10px;
-        font-size: 16px;
+    }
+
+    .home-img {
+        width: 30px; /* Smaller logo for mobile */
+        height: 30px;
+    }
+
+    .mode-toggle {
+        font-size: 14px; /* Smaller mode toggle */
+        padding: 5px 8px;
     }
 }
 
