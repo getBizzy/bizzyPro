@@ -17,8 +17,7 @@ const sections = [
             "Led Guardian One’s mobile app to zero CTF in 42 days",
             "Expanded product impact by bringing in the Space Force Portal",
             "Successfully transitioned Portal from Cloud One to Platform One",
-            "Continuous enhancement based on direct Guardian feedback",
-            "Strong relationships with Space Force stakeholders",
+            "Strong relationships with Clarity product practice team members",
         ],
     },
     {
