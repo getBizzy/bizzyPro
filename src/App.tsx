@@ -11,7 +11,7 @@ function App() {
     const [darkMode, setDarkMode] = useState(false);
 
     return (
-        <Router basename="/bizzyPro"> {/* ✅ Fix for GitHub Pages */}
+        <Router basename="/bizzyPro">
             <div className={darkMode ? "dark" : "light"}>
                 <nav className="nav-bar">
                     <Link to="/" className="home-button">
