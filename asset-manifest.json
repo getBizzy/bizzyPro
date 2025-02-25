@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bizzyPro/static/css/main.e30c29a8.css",
-    "main.js": "/bizzyPro/static/js/main.d024f04b.js",
+    "main.css": "/bizzyPro/static/css/main.c18bcbaf.css",
+    "main.js": "/bizzyPro/static/js/main.bd5f6bc6.js",
     "static/js/198.24e82c7d.chunk.js": "/bizzyPro/static/js/198.24e82c7d.chunk.js",
     "static/media/bizzy.png": "/bizzyPro/static/media/bizzy.65ead259090b38d5549a.png",
     "index.html": "/bizzyPro/index.html",
-    "main.e30c29a8.css.map": "/bizzyPro/static/css/main.e30c29a8.css.map",
-    "main.d024f04b.js.map": "/bizzyPro/static/js/main.d024f04b.js.map",
+    "main.c18bcbaf.css.map": "/bizzyPro/static/css/main.c18bcbaf.css.map",
+    "main.bd5f6bc6.js.map": "/bizzyPro/static/js/main.bd5f6bc6.js.map",
     "198.24e82c7d.chunk.js.map": "/bizzyPro/static/js/198.24e82c7d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e30c29a8.css",
-    "static/js/main.d024f04b.js"
+    "static/css/main.c18bcbaf.css",
+    "static/js/main.bd5f6bc6.js"
   ]
 }
