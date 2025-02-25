@@ -49,9 +49,9 @@ body {
     min-height: calc(100vh - 50px); /* Adjusted for footer height */
     width: 100vw; /* Ensure it spans full width */
     text-align: center;
-    margin: 0; /* Remove extra margin */
-    padding: 0; /* Remove extra padding */
-    position: absolute; /* Ensure it covers the full screen */
+    margin: 0;
+    padding: 10px;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -76,11 +76,6 @@ body {
     justify-content: center;
 }
 
-@media (max-width: 768px) {
-    .nav-links-center {
-        gap: 15px;
-    }
-}
 
 .nav-bar {
     background-color: var(--primary-color);
@@ -93,6 +88,25 @@ body {
     z-index: 1000;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+/* Mobile-friendly navigation */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links-center {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-link {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
 }
 
 /* Ensure nav links are not underlined and prevent purple visited color */
@@ -289,10 +303,15 @@ body {
     left: 0;
 }
 
-/* Nav Bar */
-.nav-bar {
-    background-color: var(--primary-color);
+/* Adjust footer on small screens */
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px;
+        padding: 10px;
+    }
 }
+
+
 
 /* Vision Card */
 .dark .vision-card {
@@ -304,4 +323,18 @@ body {
 /* Vision Title */
 .dark .vision-title {
     color: var(--secondary-color); /* Adjust for contrast */
+}
+
+@media (max-width: 768px) {
+    .vision-title {
+        font-size: 1.8rem; /* Reduce title size on mobile */
+    }
+
+    .vision-button {
+        padding: 10px 14px;
+    }
+
+    .mode-toggle {
+        font-size: 14px;
+    }
 }
