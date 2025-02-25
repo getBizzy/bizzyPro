@@ -392,10 +392,11 @@ html, body {
 .kudos-item {
     background: var(--bg-color);
     color: var(--text-color);
-    padding: 10px 15px;
     border-radius: 8px;
     margin-bottom: 10px;
-    border: 1px solid var(--text-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
@@ -408,9 +409,10 @@ html, body {
     color: var(--text-color);
     width: 70%;
     max-width: 1000px;
-    padding: 15px;
-    border: 1px solid var(--text-color);
     border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* Adjustments for small screens */
