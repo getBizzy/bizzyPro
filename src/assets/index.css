@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #000000;
+    --primary-color: #0F1133;
     --secondary-color: #49B0FF;
     --text-light: #ffffff;
     --text-dark: #000000;
@@ -13,7 +13,7 @@
 
 /* Dark mode */
 .dark {
-    --bg-color: var(--primary-color);
+    --bg-color: var(--text-dark);
     --text-color: var(--text-light);
 }
 
@@ -288,31 +288,10 @@ body {
     bottom: 0;
     left: 0;
 }
-/* Light mode */
-.light {
-    background-color: var(--text-light);
-    color: var(--text-dark);
-}
-
-/* Dark mode */
-.dark {
-    background-color: var(--primary-color);
-    color: var(--text-light);
-}
 
 /* Nav Bar */
 .nav-bar {
     background-color: var(--primary-color);
-}
-
-/* Ensure nav links adjust correctly in dark mode */
-.dark .nav-link {
-    color: var(--secondary-color); /* Adjust for contrast */
-}
-
-.dark .nav-link:hover {
-    background: var(--secondary-color);
-    color: var(--text-light);
 }
 
 /* Vision Card */
@@ -325,10 +304,4 @@ body {
 /* Vision Title */
 .dark .vision-title {
     color: var(--secondary-color); /* Adjust for contrast */
-}
-
-/* Footer */
-.dark .footer {
-    background: var(--primary-color);
-    color: var(--text-light);
 }
