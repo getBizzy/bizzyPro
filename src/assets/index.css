@@ -373,7 +373,6 @@ html, body {
     text-align: left;
     margin: 0 auto;
     padding: 15px;
-    border-radius: 8px;
     background: var(--bg-color);
 }
 
@@ -400,24 +399,48 @@ html, body {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Kudos Form Styling */
+/* Kudos Form - Removed Box Style */
 .kudos-form {
-    background: var(--text-light);
-    color: var(--text-dark);
-    width: 70%;
-    max-width: 1000px;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: none;
+    color: var(--text-color);
+    width: 90%;
+    max-width: 750px;
+    padding: 15px 0;
     margin-top: 20px;
+    border: none; /* Removes border */
+    box-shadow: none; /* Removes box effect */
 }
 
-/* Dark Mode Form Styling */
-.dark .kudos-form {
-    background: #1a1a1a;
+/* Kudos Form Inputs */
+.kudos-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    background: transparent;
+    color: var(--text-color);
+}
+
+/* Dark Mode Input Fields */
+.dark .kudos-form input {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Kudos Submit Button */
+.kudos-form button {
+    width: 100%;
+    padding: 10px;
+    background: var(--secondary-color);
     color: var(--text-light);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.kudos-form button:hover {
+    background: #3490dd;
 }
 
 /* Adjustments for Small Screens */
