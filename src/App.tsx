@@ -11,7 +11,7 @@ function App() {
     const [darkMode, setDarkMode] = useState(false);
 
     return (
-        <Router>
+        <Router basename="/bizzyPro"> {/* ✅ Fix for GitHub Pages */}
             <div className={darkMode ? "dark" : "light"}>
                 <nav className="nav-bar">
                     <Link to="/" className="home-button">
@@ -31,7 +31,9 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/vision" element={<Vision />} />
-                        <Route path="/resume" element={<iframe src="https://getbizzy.github.io/bizzyPro/resume.pdf" className="resume-iframe" title="Resume"></iframe>} />
+                        <Route path="/resume" element={
+                            <iframe src={`${process.env.PUBLIC_URL}/resume.pdf`} className="resume-iframe" title="Resume"></iframe>
+                        } />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/kudos" element={<Kudos />} />
                     </Routes>
