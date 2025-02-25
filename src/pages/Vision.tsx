@@ -3,7 +3,16 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const sections = [
     {
-        title: "Track Record",
+        title: "The Current Challenge",
+        content: [
+            "Lack of clarity between Product, Program, and Project Management",
+            "Inconsistent product practices across teams",
+            "Need for a stronger product-thinking culture",
+            "Stakeholders don’t always know what to expect from a Product Manager",
+        ],
+    },
+    {
+        title: "My Proven Track Record",
         content: [
             "Led Guardian One’s mobile app to zero CTF in 42 days",
             "Expanded product impact by bringing in the Space Force Portal",
@@ -13,7 +22,7 @@ const sections = [
         ],
     },
     {
-        title: "Framework",
+        title: "My Planned Framework",
         content: [
             "Product Excellence – Establishing clear standards and best practices",
             "Stakeholder Alignment – Ensuring cross-team collaboration and communication",
@@ -36,14 +45,15 @@ const sections = [
         content: [
             "Investment in Product Leadership Development",
             "Standardization of best practices and methodologies",
+            "Build a community of product thinkers at Clarity",
             "Support for a product-led organization",
         ],
     },
     {
-        title: "Final Pitch",
+        title: "Let's getBizzy!",
         content: [
-            "Clarity has a unique opportunity to set the gold standard for product management.",
-            "With my experience leading high-impact initiatives, mentoring teams, and building scalable frameworks, I am confident I can make that happen.",
+            "Clarity has an opportunity to set the gold standard for product management.",
+            "I bring the experience, frameworks, and leadership to make that happen",
         ],
     },
 ];
@@ -70,6 +80,7 @@ const Vision = () => {
 
     return (
         <div className="vision-container">
+            <h1 className="vision-header">Why Clarity Needs to Get Bizzy</h1>
             <div className={`vision-card ${fade ? "fade-out" : "fade-in"}`}>
                 <h2 className="vision-title">{sections[currentIndex].title}</h2>
                 <ul className="vision-list">
