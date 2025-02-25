@@ -23,6 +23,15 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    background-color: var(--bg-color); /* Ensures full background coverage */
+}
+
 .resume-iframe {
     width: 80vw;
     height: 100vh;
@@ -47,7 +56,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: calc(100vh - 50px); /* Adjusted for footer height */
-    width: 100vw; /* Ensure it spans full width */
+    width: 100%; /* Ensure it spans full width */
     text-align: center;
     margin: 0;
     padding: 10px;
@@ -55,6 +64,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    position: relative;
 }
 
 .home-button {
