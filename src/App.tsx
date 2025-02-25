@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -8,14 +8,23 @@ import bizzyHeadshot from "./assets/bizzy.png";
 import "./assets/index.css";
 
 function App() {
-    const [darkMode, setDarkMode] = useState(false);
+    // Load dark mode preference from localStorage, default to false (light mode)
+    const [darkMode, setDarkMode] = useState(() => {
+        return localStorage.getItem("theme") === "dark";
+    });
+
+    // Update localStorage whenever darkMode changes
+    useEffect(() => {
+        localStorage.setItem("theme", darkMode ? "dark" : "light");
+        document.documentElement.className = darkMode ? "dark" : "light";
+    }, [darkMode]);
 
     return (
         <Router basename="/bizzyPro">
             <div className={darkMode ? "dark" : "light"}>
                 <nav className="nav-bar">
                     <Link to="/" className="home-button">
-                        <img src={bizzyHeadshot} alt="Home" className="home-img"/>
+                        <img src={bizzyHeadshot} alt="Home" className="home-img" />
                     </Link>
                     <div className="nav-links-center">
                         <Link to="/vision" className="nav-link">Vision</Link>
@@ -29,14 +38,17 @@ function App() {
                 </nav>
                 <div className="content-container">
                     <Routes>
-                        <Route path="/" element={<Home/>}/>
-                        <Route path="/vision" element={<Vision/>}/>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/vision" element={<Vision />} />
                         <Route path="/resume" element={
-                            <iframe src={`${process.env.PUBLIC_URL}/resume.pdf`} className="resume-iframe"
-                                    title="Resume"></iframe>
-                        }/>
-                        <Route path="/contact" element={<Contact/>}/>
-                        <Route path="/kudos" element={<Kudos/>}/>
+                            <iframe
+                                src={`${process.env.PUBLIC_URL}/resume.pdf`}
+                                className="resume-iframe"
+                                title="Resume">
+                            </iframe>
+                        } />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/kudos" element={<Kudos />} />
                     </Routes>
                 </div>
                 <footer className="footer">
