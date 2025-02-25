@@ -1,11 +1,26 @@
 :root {
-    --primary-color: #0F1133;
+    --primary-color: #000000;
     --secondary-color: #49B0FF;
     --text-light: #ffffff;
     --text-dark: #000000;
 }
 
+/* Light mode */
+.light {
+    --bg-color: var(--text-light);
+    --text-color: var(--text-dark);
+}
+
+/* Dark mode */
+.dark {
+    --bg-color: var(--primary-color);
+    --text-color: var(--text-light);
+}
+
+/* Apply theme colors globally */
 body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: Montserrat, sans-serif;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -31,7 +46,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 50px); /* Adjusted for footer height */
     width: 100vw; /* Ensure it spans full width */
     text-align: center;
     margin: 0; /* Remove extra margin */
@@ -42,17 +57,6 @@ body {
     right: 0;
     bottom: 0;
 }
-
-.light {
-    background-color: var(--text-light);
-    color: var(--text-dark);
-}
-
-.dark {
-    background-color: var(--text-dark);
-    color: var(--text-light);
-}
-
 
 .home-button {
     display: flex;
@@ -81,7 +85,7 @@ body {
 .nav-bar {
     background-color: var(--primary-color);
     padding: 15px 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     left: 0;
@@ -275,7 +279,7 @@ body {
 
 .footer {
     width: 100%;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     color: var(--text-light);
     text-align: center;
     padding: 15px;
@@ -283,4 +287,48 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
+}
+/* Light mode */
+.light {
+    background-color: var(--text-light);
+    color: var(--text-dark);
+}
+
+/* Dark mode */
+.dark {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* Nav Bar */
+.nav-bar {
+    background-color: var(--primary-color);
+}
+
+/* Ensure nav links adjust correctly in dark mode */
+.dark .nav-link {
+    color: var(--secondary-color); /* Adjust for contrast */
+}
+
+.dark .nav-link:hover {
+    background: var(--secondary-color);
+    color: var(--text-light);
+}
+
+/* Vision Card */
+.dark .vision-card {
+    background: #1a1a1a;
+    color: var(--text-light);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Vision Title */
+.dark .vision-title {
+    color: var(--secondary-color); /* Adjust for contrast */
+}
+
+/* Footer */
+.dark .footer {
+    background: var(--primary-color);
+    color: var(--text-light);
 }
