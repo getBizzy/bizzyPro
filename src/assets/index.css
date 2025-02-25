@@ -374,15 +374,21 @@ html, body {
     text-align: center;
 }
 
-/* Limit kudos text width */
-.kudos-list {
+/* Scrollable Kudos List */
+.kudos-scroll-container {
     width: 90%;
-    max-width: 600px; /* Prevents text from going too wide */
+    max-width: 1000px;
+    max-height: 60vh; /* Ensures scrolling inside this section */
+    overflow-y: auto;
     text-align: left;
     margin: 0 auto;
     padding: 15px;
+    border-radius: 8px;
+    background: var(--bg-color);
 }
 
+
+/* Individual kudos message */
 .kudos-item {
     background: var(--bg-color);
     color: var(--text-color);
@@ -394,9 +400,26 @@ html, body {
     overflow-wrap: break-word;
 }
 
+/* Input form styling */
+.kudos-form {
+    position: sticky;
+    bottom: 10px;
+    background: var(--bg-color);
+    width: 90%;
+    max-width: 600px;
+    padding: 15px;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
 /* Adjustments for small screens */
 @media (max-width: 768px) {
-    .kudos-list {
+    .kudos-scroll-container {
+        width: 95%;
+        max-height: 50vh;
+    }
+
+    .kudos-form {
         width: 95%;
     }
 }
