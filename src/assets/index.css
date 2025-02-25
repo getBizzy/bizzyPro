@@ -19,8 +19,6 @@
 
 /* Apply theme colors globally */
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
     font-family: Montserrat, sans-serif;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -42,6 +40,8 @@ body {
 }
 
 .content-container {
+    background-color: var(--bg-color);
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
