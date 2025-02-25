@@ -316,17 +316,6 @@ html, body {
     color: var(--secondary-color); /* Lighter blue for better contrast */
 }
 
-.footer {
-    width: 100%;
-    background: var(--secondary-color);
-    color: var(--text-light);
-    text-align: center;
-    padding: 15px;
-    font-size: 14px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
 
 /* Adjust footer on small screens */
 @media (max-width: 768px) {
@@ -364,6 +353,18 @@ html, body {
     }
 }
 
+/* Fix scrolling issue */
+.kudos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensures scrolling is possible */
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+    overflow-y: auto; /* Enables scrolling */
+}
+
 /* Scrollable Kudos List */
 .kudos-scroll-container {
     width: 90%;
@@ -371,12 +372,12 @@ html, body {
     max-height: 60vh; /* Enables scrolling */
     overflow-y: auto;
     text-align: left;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     padding: 15px;
     background: var(--bg-color);
 }
 
-/* Individual Kudos Item - Matches Vision Cards */
+/* Individual Kudos Item */
 .kudos-item {
     width: 90%;
     max-width: 750px;
@@ -399,38 +400,33 @@ html, body {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Kudos Form - Removed Box Style */
+/* Kudos Form - Keep inputs inline */
 .kudos-form {
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    gap: 10px; /* Space between inputs */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
     background: none;
     color: var(--text-color);
-    width: 90%;
-    max-width: 750px;
-    padding: 15px 0;
-    margin-top: 20px;
-    border: none; /* Removes border */
-    box-shadow: none; /* Removes box effect */
 }
 
-/* Kudos Form Inputs */
+/* Kudos Input Fields - Side by Side */
 .kudos-form input {
-    width: 100%;
+    flex: 1; /* Distributes width evenly */
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid var(--text-color);
     border-radius: 5px;
     background: transparent;
     color: var(--text-color);
+    max-width: 300px; /* Prevents excessive width */
 }
 
-/* Dark Mode Input Fields */
-.dark .kudos-form input {
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-/* Kudos Submit Button */
+/* Submit Button */
 .kudos-form button {
-    width: 100%;
-    padding: 10px;
+    padding: 10px 15px;
     background: var(--secondary-color);
     color: var(--text-light);
     border: none;
@@ -443,18 +439,31 @@ html, body {
     background: #3490dd;
 }
 
+/* Fix footer overlap */
+.footer {
+    width: 100%;
+    background: var(--secondary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    position: relative; /* Fixes footer positioning */
+    margin-top: 20px; /* Ensures space above footer */
+}
+
 /* Adjustments for Small Screens */
 @media (max-width: 768px) {
-    .kudos-scroll-container {
-        width: 95%;
-        max-height: 50vh;
-    }
-
-    .kudos-item {
-        width: 95%;
-    }
-
     .kudos-form {
-        width: 95%;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .kudos-form input {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .kudos-scroll-container {
+        max-height: 50vh;
     }
 }
