@@ -358,26 +358,27 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Ensures scrolling is possible */
+    justify-content: flex-start; /* Allows scrolling */
     min-height: 100vh;
     padding: 20px;
     text-align: center;
     overflow-y: auto; /* Enables scrolling */
+    position: relative;
 }
 
-/* Scrollable Kudos List */
+/* Ensure the Kudos List scrolls properly */
 .kudos-scroll-container {
     width: 90%;
     max-width: 1000px;
-    max-height: 60vh; /* Enables scrolling */
+    max-height: 60vh; /* Ensures scrolling */
     overflow-y: auto;
     text-align: left;
-    margin: 0 auto 20px;
+    margin: 0 auto;
     padding: 15px;
     background: var(--bg-color);
 }
 
-/* Individual Kudos Item */
+/* Kudos Item - Styled like Vision Cards */
 .kudos-item {
     width: 90%;
     max-width: 750px;
@@ -405,12 +406,14 @@ html, body {
     width: 90%;
     max-width: 1000px;
     display: flex;
+    flex-wrap: wrap;
     gap: 10px; /* Space between inputs */
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     background: none;
     color: var(--text-color);
+    position: relative; /* Fixes positioning */
 }
 
 /* Kudos Input Fields - Side by Side */
@@ -447,8 +450,9 @@ html, body {
     text-align: center;
     padding: 15px;
     font-size: 14px;
-    position: relative; /* Fixes footer positioning */
-    margin-top: 20px; /* Ensures space above footer */
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 /* Adjustments for Small Screens */
