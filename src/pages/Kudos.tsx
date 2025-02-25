@@ -37,16 +37,19 @@ const Kudos = () => {
     };
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
+        <div className="kudos-container">
             <h1 className="text-4xl font-bold mb-6">Kudos & Recommendations</h1>
 
             {/* Show message when no kudos exist */}
             {kudosList.length === 0 ? (
                 <p className="text-gray-500 mb-6">No kudos yet. Be the first to add one!</p>
             ) : (
-                <div className="text-lg text-gray-700 max-w-2xl text-center mb-6">
+                <div className="kudos-list">
                     {kudosList.map((kudos) => (
-                        <p key={kudos.id} className="mb-4">"{kudos.text}" - {kudos.author}</p>
+                        <div key={kudos.id} className="kudos-item">
+                            <p>"{kudos.text}"</p>
+                            <span> - {kudos.author}</span>
+                        </div>
                     ))}
                 </div>
             )}

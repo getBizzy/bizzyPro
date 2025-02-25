@@ -363,3 +363,40 @@ html, body {
         font-size: 14px;
     }
 }
+
+.kudos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Limit kudos text width */
+.kudos-list {
+    width: 90%;
+    max-width: 600px; /* Prevents text from going too wide */
+    text-align: left;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.kudos-item {
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+    .kudos-list {
+        width: 95%;
+    }
+}
