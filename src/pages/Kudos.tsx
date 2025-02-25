@@ -38,10 +38,11 @@ const Kudos = () => {
 
     return (
         <div className="kudos-container">
-            <h1 className="text-4xl font-bold mb-6">Kudos & Recommendations</h1>
+
 
             {/* Scrollable Kudos List */}
             <div className="kudos-scroll-container">
+                <h1 className="text-4xl font-bold mb-6">Kudos & Recommendations</h1>
                 {kudosList.length === 0 ? (
                     <p className="text-gray-500 mb-6">No kudos yet. Be the first to add one!</p>
                 ) : (
