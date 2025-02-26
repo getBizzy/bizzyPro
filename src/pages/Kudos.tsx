@@ -42,7 +42,7 @@ const Kudos = () => {
 
             {/* Scrollable Kudos List */}
             <div className="kudos-scroll-container">
-                <h1 className="text-4xl font-bold mb-6">Kudos & Recommendations</h1>
+                <h1 className="text-4xl font-bold mb-6">Recommendations</h1>
                 {kudosList.length === 0 ? (
                     <p className="text-gray-500 mb-6">No kudos yet. Be the first to add one!</p>
                 ) : (
@@ -59,7 +59,7 @@ const Kudos = () => {
 
             {/* Kudos Input Form */}
             <div className="kudos-form">
-                <h2 className="text-xl font-semibold mb-4">Add a Kudos</h2>
+                <h2 className="text-xl font-semibold mb-4">Add Kudos</h2>
                 <input
                     type="text"
                     className="w-full p-2 border rounded mb-2"

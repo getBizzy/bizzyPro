@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Kudos from "./pages/Kudos";
@@ -20,7 +20,7 @@ function App() {
     }, [darkMode]);
 
     return (
-        <Router basename="/bizzyPro">
+        <Router>
             <div className={darkMode ? "dark" : "light"}>
                 <nav className="nav-bar">
                     <Link to="/" className="home-button">
