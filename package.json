@@ -1,7 +1,7 @@
 {
   "name": "bizzypro",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/getBizzy/bizzyPro/issues"
   },
-  "homepage": "https://getbizzy.github.io/bizzyPro",
+  "homepage": "https://getbizzy.github.io/bizzyPro/",
   "description": "",
   "dependencies": {
     "@shadcn/ui": "^0.0.4",
