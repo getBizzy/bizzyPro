@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./assets/index.css";
 
-console.log("ENV VARIABLES LOADED:", process.env);
 
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
