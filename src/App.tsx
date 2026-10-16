@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { Sun, Moon } from "lucide-react";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Kudos from "./pages/Kudos";
@@ -32,8 +33,8 @@ function App() {
                         <Link to="/contact" className="nav-link">Contact</Link>
                         <Link to="/kudos" className="nav-link">Kudos</Link>
                     </div>
-                    <button onClick={() => setDarkMode(!darkMode)} className="mode-toggle">
-                        {darkMode ? " ☀️" : " 🌙"}
+                    <button onClick={() => setDarkMode(!darkMode)} className="mode-toggle" aria-label="Toggle dark mode">
+                        {darkMode ? <Sun size={18} /> : <Moon size={18} />}
                     </button>
                 </nav>
                 <div className="content-container">
@@ -52,7 +53,7 @@ function App() {
                     </Routes>
                 </div>
                 <footer className="footer">
-                    © 2025 Elizabeth Koch
+                    © 2026 Elizabeth Koch
                 </footer>
             </div>
         </Router>

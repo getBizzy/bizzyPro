@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { supabase } from "../utils/supabaseClient"; // Import Supabase client
+import { supabase } from "../utils/supabaseClient";
 
 type KudosItem = {
     id: number;
@@ -14,9 +14,11 @@ const Kudos = () => {
 
     // Fetch kudos from Supabase when component mounts
     useEffect(() => {
+        const client = supabase;
+        if (!client) return;
         const fetchKudos = async () => {
-            const { data, error } = await supabase.from("kudos").select("*").order("created_at", { ascending: false });
-            if (!error) {
+            const { data, error } = await client.from("kudos").select("*").order("created_at", { ascending: false });
+            if (!error && data) {
                 setKudosList(data);
             }
         };
@@ -24,10 +26,12 @@ const Kudos = () => {
     }, []);
 
     const handleAddKudos = async () => {
+        const client = supabase;
+        if (!client) return;
         if (newKudos.trim() !== "" && newAuthor.trim() !== "") {
             const newEntry = { text: newKudos, author: newAuthor };
 
-            const { data, error } = await supabase.from("kudos").insert([newEntry]).select();
+            const { data, error } = await client.from("kudos").insert([newEntry]).select();
             if (!error && data) {
                 setKudosList([data[0], ...kudosList]); // Add new kudos at the top
                 setNewKudos("");
@@ -36,9 +40,22 @@ const Kudos = () => {
         }
     };
 
+    if (!supabase) {
+        return (
+            <div className="kudos-container">
+                <div className="kudos-scroll-container">
+                    <h1 className="text-4xl font-bold mb-6">Recommendations</h1>
+                    <p className="kudos-note">
+                        The kudos wall is being refreshed. Check back soon, or send your kudos to
+                        {" "}<a href="mailto:bizzy@clarityinnovates.com" style={{ color: "var(--secondary-color)" }}>bizzy@clarityinnovates.com</a>.
+                    </p>
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div className="kudos-container">
-
 
             {/* Scrollable Kudos List */}
             <div className="kudos-scroll-container">

@@ -10,11 +10,11 @@ const Contact = () => {
                 <p className="flex items-center gap-2 mb-4">
                     <Mail className="text-[var(--text-color)]" />
                     <a
-                        href="mailto:bizzy@getbizzy.pro"
+                        href="mailto:bizzy@clarityinnovates.com"
                         className="text-[var(--text-color)] no-underline hover:text-[var(--text-color)] transition-colors duration-200"
                         style={{ textDecoration: "none", color: "var(--text-color)" }}
                     >
-                        bizzy@getbizzy.pro
+                        bizzy@clarityinnovates.com
                     </a>
                 </p>
 

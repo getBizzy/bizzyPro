@@ -3,56 +3,64 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const sections = [
     {
-        title: "The Current Challenge",
+        title: "The Role",
         content: [
-            "Lack of clarity between Product, Program, and Project Management",
-            "Inconsistent product practices across teams",
-            "Need for a stronger product-thinking culture",
-            "Stakeholders don’t always know what to expect from a Product Manager",
+            "Chief Product Manager owns product execution across the Rapid Capabilities portfolio",
+            "Turns the VP & CTO's vision into roadmaps, priorities, and shipped outcomes",
+            "Builds the product processes Clarity needs to scale",
+            "Recruits, coaches, and grows product talent",
         ],
     },
     {
-        title: "My Proven Track Record",
+        title: "Track Record: Delivery",
         content: [
-            "Led Guardian One’s mobile app to zero CTF in 42 days",
-            "Expanded product impact by bringing in the Space Force Portal",
-            "Successfully transitioned Portal from Cloud One to Platform One",
-            "Strong relationships with Clarity product practice team members",
+            "Guardian One: zero to Certificate to Field in 42 days against a typical 90",
+            "Delivered through BESPIN and Cantina pipelines under cATO",
+            "Brought the Space Force Portal into the portfolio and moved it from Cloud One to Platform One",
+            "Today: directing product for Cloud One DSOT, the DAF's application modernization program",
         ],
     },
     {
-        title: "My Planned Framework",
+        title: "Track Record: The Practice",
         content: [
-            "Product Excellence – Establishing clear standards and best practices",
-            "Stakeholder Alignment – Ensuring cross-team collaboration and communication",
-            "Rapid Delivery – Agile execution with security and compliance in mind",
-            "Continuous Learning – Mentorship, training, and knowledge-sharing",
-            "Measurable Impact – Data-driven decision-making for product success",
+            "Built and scaled the product practice supporting 17 engineering teams",
+            "Standards, playbooks, coaching, and career development",
+            "Moved reporting from activity tracking to outcome-based KPIs",
+            "Presented Guardian One at DAFITC 2024",
         ],
     },
     {
-        title: "Vision for Clarity’s Product Practice",
+        title: "The AI Advantage",
         content: [
-            "Clarity PMs should be recognized as best-in-class product leaders",
-            "Develop a playbook for success—formulas, templates, and best practices",
-            "Drive a culture of ownership where PMs are empowered and accountable",
-            "Elevate product management as a strategic function",
+            "Built an AI-driven product operating system on Claude",
+            "Custom agentic skills, review agents, and automated workflows for every PM artifact",
+            "Presented \"AI Confidence vs. AI Competence\" to set the bar for responsible AI adoption",
+            "A practice that ships faster because its tooling thinks with it",
         ],
     },
     {
-        title: "What I Need to Succeed",
+        title: "First 90 Days",
         content: [
-            "Investment in Product Leadership Development",
-            "Standardization of best practices and methodologies",
-            "Build a community of product thinkers at Clarity",
-            "Support for a product-led organization",
+            "Baseline the portfolio: one outcome-based roadmap, every initiative tied to a KPI",
+            "Instrument delivery: DORA-style metrics across all programs",
+            "Codify the playbook: discovery, framing, prioritization, release",
+            "Talent plan: a career ladder and hiring profile for product",
+        ],
+    },
+    {
+        title: "Why Internal",
+        content: [
+            "Day one for me is month six for an outside hire",
+            "Active Secret clearance, TS/SCI sponsorship eligible",
+            "The practice this role inherits is the one I built",
+            "No ramp, no inheritance risk, no lost momentum",
         ],
     },
     {
         title: "Let's getBizzy!",
         content: [
-            "Clarity has an opportunity to set the gold standard for product management.",
-            "I bring the experience, frameworks, and leadership to make that happen",
+            "Clarity set the standard for its product practice. Now let's scale it.",
+            "I bring the track record, the frameworks, and the AI-powered tooling to make it happen",
         ],
     },
 ];
@@ -79,7 +87,7 @@ const Vision = () => {
 
     return (
         <div className="vision-container">
-            <h1 className="vision-header">Why Clarity Needs to Get Bizzy</h1>
+            <h1 className="vision-header">Why Clarity's Next Chief Product Manager Should Get Bizzy</h1>
             <div className={`vision-card ${fade ? "fade-out" : "fade-in"}`}>
                 <h2 className="vision-title">{sections[currentIndex].title}</h2>
                 <ul className="vision-list">

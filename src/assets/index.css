@@ -473,3 +473,67 @@ html, body {
         max-height: 100%;
     }
 }
+/* Home hero (Chief PM campaign) */
+.home-hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    color: var(--text-color);
+}
+
+.home-greeting {
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin: 0 0 0.75rem 0;
+}
+
+.home-headline {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    max-width: 48rem;
+}
+
+.home-subhead {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 36rem;
+    margin: 0 0 2rem 0;
+    opacity: 0.85;
+}
+
+.home-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.home-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(73, 176, 255, 0.35);
+}
+
+.kudos-note {
+    max-width: 32rem;
+    margin: 1rem auto;
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--secondary-color);
+    color: var(--text-color);
+    opacity: 0.85;
+    text-align: center;
+}
