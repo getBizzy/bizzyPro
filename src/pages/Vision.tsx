@@ -23,7 +23,7 @@ const sections = [
     {
         title: "Track Record: The Practice",
         content: [
-            "Built and scaled the product practice supporting 17 engineering teams",
+            "Built the product practice: 14 product managers delivering in secure cloud environments",
             "Standards, playbooks, coaching, and career development",
             "Moved reporting from activity tracking to outcome-based KPIs",
             "Presented Guardian One at DAFITC 2024",
@@ -97,13 +97,26 @@ const Vision = () => {
                 </ul>
 
                 <div className="vision-nav-buttons">
-                    <button onClick={prevSlide} className="vision-button">
+                    <button onClick={prevSlide} className="vision-button" aria-label="Previous slide">
                         <ChevronLeft size={28} />
                     </button>
-                    <span className="vision-slide-counter">
-                        {currentIndex + 1} / {sections.length}
-                    </span>
-                    <button onClick={nextSlide} className="vision-button">
+                    <div className="vision-progress" role="tablist" aria-label="Slides">
+                        {sections.map((section, index) => (
+                            <button
+                                key={section.title}
+                                className={`vision-dot ${index === currentIndex ? "active" : ""}`}
+                                aria-label={section.title}
+                                onClick={() => {
+                                    setFade(true);
+                                    setTimeout(() => {
+                                        setCurrentIndex(index);
+                                        setFade(false);
+                                    }, 200);
+                                }}
+                            />
+                        ))}
+                    </div>
+                    <button onClick={nextSlide} className="vision-button" aria-label="Next slide">
                         <ChevronRight size={28} />
                     </button>
                 </div>
