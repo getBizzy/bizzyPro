@@ -64,23 +64,7 @@ $ /launch-checklist   42 items ready`}
                         </div>
                     </div>
 
-                    <a
-                        className="proof-card"
-                        href={`${process.env.PUBLIC_URL}/proof/ai-confidence-vs-competence.pdf`}
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <img
-                            src={`${process.env.PUBLIC_URL}/proof/deck-quote.png`}
-                            alt="Slide reading: AI can create the illusion of understanding"
-                            className="proof-img"
-                        />
-                        <div className="proof-caption">
-                            <strong>The thesis</strong>
-                            <span>Coaching the practice to use AI with judgment, not just enthusiasm.</span>
-                        </div>
-                    </a>
-                    <a
+                    <
                         className="proof-card"
                         href="https://sites.google.com/clarityinnovates.com/product-thinking/home"
                         target="_blank"
