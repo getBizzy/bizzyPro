@@ -14,7 +14,7 @@ const sections = [
     {
         title: "Track Record: Delivery",
         content: [
-            "Guardian One: zero to Certificate to Field in 42 days against a typical 90",
+            "Guardian One: an unprecedented zero to Certificate to Field in 42 days",
             "Delivered through BESPIN and Cantina pipelines under cATO",
             "Brought the Space Force Portal into the portfolio and moved it from Cloud One to Gravity",
             "Today: directing product for Cloud One DSOT, the DAF's application modernization program",
@@ -25,7 +25,6 @@ const sections = [
         content: [
             "Built the product practice: 14 product managers delivering in secure cloud environments",
             "Standards, playbooks, coaching, and career development",
-            "Moved reporting from activity tracking to outcome-based KPIs",
             "Presented Guardian One at DAFITC 2024",
         ],
     },
@@ -42,7 +41,7 @@ const sections = [
         title: "First 90 Days",
         content: [
             "Baseline the portfolio: one outcome-based roadmap, every initiative tied to a KPI",
-            "Instrument delivery: DORA-style metrics across all programs",
+            "Measure delivery speed and reliability (DORA metrics) across all programs",
             "Codify the playbook: discovery, framing, prioritization, release",
             "Talent plan: a career ladder and hiring profile for product",
         ],
