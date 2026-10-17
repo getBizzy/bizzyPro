@@ -44,7 +44,12 @@ const Home = () => {
                         </div>
                     </a>
 
-                    <div className="proof-card proof-terminal-card">
+                    <a
+                        className="proof-card proof-terminal-card"
+                        href="https://getbizzy.pages-1.ccg.com/bizzypm/docs/index.html"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         <div className="proof-terminal">
                             <div className="proof-terminal-bar">
                                 <i /><i /><i />
@@ -62,7 +67,7 @@ $ /launch-checklist   42 items ready`}
                             <strong>bizzyPM</strong>
                             <span>An AI product operating system on Claude: agentic skills and review agents for every PM artifact.</span>
                         </div>
-                    </div>
+                    </a>
 
                     <a
                         className="proof-card"
