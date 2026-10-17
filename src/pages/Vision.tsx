@@ -16,7 +16,7 @@ const sections = [
         content: [
             "Guardian One: zero to Certificate to Field in 42 days against a typical 90",
             "Delivered through BESPIN and Cantina pipelines under cATO",
-            "Brought the Space Force Portal into the portfolio and moved it from Cloud One to Platform One",
+            "Brought the Space Force Portal into the portfolio and moved it from Cloud One to Gravity",
             "Today: directing product for Cloud One DSOT, the DAF's application modernization program",
         ],
     },
