@@ -29,7 +29,7 @@ const Home = () => {
                 <div className="proof-grid">
                     <a
                         className="proof-card"
-                        href={`${process.env.PUBLIC_URL}/proof/ai-confidence-vs-competence.pdf`}
+                        href="https://docs.google.com/presentation/d/e/2PACX-1vRDt8HsshNIL9wqxaUhktS1X-djuoOJODCzOiU2NU7VHEVDdcEVL16ScUg0XpCE8Wxf3oTDG08-MhHD/pub?start=true&loop=false&delayms=3000"
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -64,7 +64,7 @@ $ /launch-checklist   42 items ready`}
                         </div>
                     </div>
 
-                    <
+                    <a
                         className="proof-card"
                         href="https://sites.google.com/clarityinnovates.com/product-thinking/home"
                         target="_blank"
