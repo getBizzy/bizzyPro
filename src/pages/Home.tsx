@@ -15,10 +15,10 @@ const Home = () => {
     return (
         <div className="home-hero">
             <h1 className="home-greeting">{greeting}</h1>
-            <h2 className="home-headline">Elizabeth "Bizzy" Koch for <span className="headline-accent">Chief Product Manager</span></h2>
+            <h2 className="home-headline">Let's <span className="headline-accent">getBizzy</span>.</h2>
             <p className="home-subhead">
-                The product practice this role will scale is the one I built.
-                Here's the case, the track record, and the plan.
+                The case for Bizzy Koch as Clarity's Chief Product Manager:
+                the track record, and the plan.
             </p>
             <Link to="/vision" className="home-cta">
                 See the Vision <ArrowRight size={18} />
