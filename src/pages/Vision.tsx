@@ -57,8 +57,8 @@ const sections = [
     {
         title: "Let's getBizzy!",
         content: [
-            "Clarity set the standard for its product practice. Now let's scale it.",
-            "I bring the track record, the frameworks, and the AI-powered tooling to make it happen",
+            "Set the standard for the product practice and scale it.",
+            "I bring the frameworks, and the AI-powered tooling to make it happen",
         ],
     },
 ];
