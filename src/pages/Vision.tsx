@@ -15,7 +15,6 @@ const sections = [
         title: "Track Record: Delivery",
         content: [
             "Guardian One: an unprecedented zero to Certificate to Field in 42 days",
-            "Delivered through BESPIN and Cantina pipelines under cATO",
             "Brought the Space Force Portal into the portfolio and moved it from Cloud One to Gravity",
             "Today: directing product for Cloud One DSOT, the DAF's application modernization program",
         ],
