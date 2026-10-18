@@ -22,7 +22,7 @@ const sections = [
     {
         title: "Track Record: The Practice",
         content: [
-            "Built the product practice: 14 product managers delivering in secure cloud environments",
+            "Built the product practice: 14 product managers delivering on programs",
             "Standards, playbooks, coaching, and career development",
             "Presented Guardian One at DAFITC 2024",
         ],
