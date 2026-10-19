@@ -65,7 +65,7 @@ $ /launch-checklist   42 items ready`}
                         </div>
                         <div className="proof-caption">
                             <strong>bizzyPM</strong>
-                            <span>An AI product operating system on Claude: agentic skills and review agents for every PM artifact.</span>
+                            <span>An AI product operating system on Claude: agentic skills and review agents for every PM artifact. Opens on the Clarity VPN.</span>
                         </div>
                     </a>
 
