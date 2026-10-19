@@ -22,7 +22,7 @@ const sections = [
     {
         title: "Track Record: The Practice",
         content: [
-            "Built the product practice: 14 product managers delivering on programs",
+            "Built the product practice: 15 product managers delivering on programs",
             "Standards, playbooks, coaching, and career development",
         ],
     },
