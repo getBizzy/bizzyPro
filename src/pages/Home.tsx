@@ -17,7 +17,8 @@ const Home = () => {
             <h1 className="home-greeting">{greeting}</h1>
             <h2 className="home-headline">Let's <span className="headline-accent">getBizzy</span>.</h2>
             <p className="home-subhead">
-                The case for Bizzy Koch as Clarity's Chief Product Manager:
+                The case for Bizzy Koch as Chief Product Manager of Rapid Capabilities,
+                where Clarity builds the products it takes to market:
                 the track record, and the plan.
             </p>
             <Link to="/vision" className="home-cta">
